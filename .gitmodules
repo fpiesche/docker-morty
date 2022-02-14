@@ -1,0 +1,3 @@
+[submodule "morty"]
+	path = morty
+	url = https://github.com/dalf/morty
