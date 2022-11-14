@@ -6,7 +6,7 @@ RUN go get github.com/asciimoo/morty
 RUN go build
 
 # Copy the compiled executable to a new image to minimise size
-FROM alpine:3.16.2
+FROM alpine:3.16.3
 LABEL "Maintainer" "Florian Piesche <florian@yellowkeycard.net>"
 
 COPY --from=builder /build/morty/morty /morty
